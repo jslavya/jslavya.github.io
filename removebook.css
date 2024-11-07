@@ -1,0 +1,109 @@
+/* Body styling */
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: #f4f6f9; /* Light gray background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container styling */
+.container {
+    max-width: 500px; /* Constrained width for better focus */
+    background-color: #fff; /* White background for content area */
+    padding: 2rem; /* Internal padding */
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 20px; /* Margin around the container */
+}
+
+/* Alert styling */
+.alert-warning {
+    background-color: #fff3cd; /* Light yellow background */
+    color: #856404; /* Darker text for readability */
+    border: 1px solid #ffeeba; /* Matching border */
+    border-radius: 5px; /* Rounded edges */
+    padding: 0.75rem 1rem; /* Padding inside the alert */
+    margin-bottom: 1.5rem; /* Space below the alert */
+    position: relative; /* Position for close button */
+}
+
+/* Close button for alert */
+.alert-warning .close {
+    position: absolute;
+    top: 10px;
+    right: 12px; /* Align with top/right */
+    color: #856404; /* Close button color */
+    font-size: 1.5rem; /* Size of the close button */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+/* Form header */
+.display-4 {
+    font-size: 2rem; /* Large header font size */
+    font-weight: bold; /* Bold text */
+    color: #d9534f; /* Color matching the theme */
+    margin-bottom: 1.5rem; /* Space below the header */
+    text-align: center; /* Center the text */
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 1.5rem; /* Spacing between input groups */
+}
+
+.input-group-text {
+    background-color: #d9534f; /* Red background for input prefix */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px 0 0 5px; /* Rounded left side */
+}
+
+.form-control {
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 0 5px 5px 0; /* Rounded right side */
+    padding: 0.75rem; /* Internal padding for inputs */
+    font-size: 1rem; /* Font size for inputs */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.form-control:focus {
+    outline: none; /* No outline */
+    border-color: #d9534f; /* Red border on focus */
+    box-shadow: 0 0 5px rgba(217, 83, 79, 0.5); /* Light shadow effect */
+}
+
+/* Submit button styling */
+.btn-primary {
+    background-color: #d9534f; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 1.1rem; /* Font size for button */
+    font-weight: bold; /* Bold button text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded button corners */
+    padding: 0.75rem; /* Padding for button */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+.btn-primary:hover {
+    background-color: #c9302c; /* Darker red on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+}
+
+.btn-block {
+    width: 100%; /* Full width for buttons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 1.75rem; /* Slightly smaller on mobile */
+    }
+
+    .btn-primary {
+        font-size: 1rem; /* Adjust button size on mobile */
+    }
+}

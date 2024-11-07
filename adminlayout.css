@@ -1,0 +1,69 @@
+/* styles.css */
+
+/* General body styles */
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/08/Library-Desktop-Wallpaper-768x480.jpg');
+    background-size: cover;
+    color: white;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Container styles */
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent black */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styles */
+footer p {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+/* Table styles */
+.table {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table th,
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Modal styles */
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.modal-header {
+    border-bottom: 2px solid #007bff;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Input styles */
+input, textarea {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+}

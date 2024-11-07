@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="admindashboard.css">
+
+<div class="input-group mb-3" style="width: 300px;">
+    <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fa fa-search"></i></span>
+    </div>
+    <input type="search" class="form-control" placeholder="Search books" id="search" autofocus>
+</div>
+
+<div class="alert alert-warning">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+</div>
+
+<div class="text-center table-responsive">
+    <h1 class="display-4 text-center">All Books</h1><br>
+    
+    <table class="table table-dark table-bordered" id="data">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>Total Copies</th>
+                <th>Copies Available</th>
+                <th>Copies Issued</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+            <tr>
+                <td>{{ book.id }}</td>
+                <td>{{ book.name }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.description }}</td>
+                <td>{{ book.total_copy }}</td>
+                <td>{{ book.present_copy }}</td>
+                <td>{{ book.issued_copy }}</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal{{ book.id }}">
+                        Details
+                    </button>
+                </td>
+            </tr>
+
+            <!-- Modal for each book -->
+            <div class="modal fade" id="modal{{ book.id }}" tabindex="-1" role="dialog" aria-labelledby="modalLabel{{ book.id }}" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modalLabel{{ book.id }}">
+                                <i class="fa fa-book" style="float: left; margin-right: 10px;"></i>{{ book.name }}
+                            </h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body text-justify ml-3 mr-3">
+                            <p>Author: {{ book.author }}<br>
+                               Date Added: {{ book.date_added }}<br>
+                               Description: {{ book.description }}<br>
+                               Copies: {{ book.total_copy }}</p>
+                            <hr style="border: 3px solid black; border-radius: 5px;" />
+
+                           
+                            <p># {{ i.id }}<br>
+                               Date Added: {{ i.date_added }}<br>
+                               Date of Issue: {{ i.date_issued }}<br>
+                               Date of Return: {{ i.date_return }}<br>
+                               Issued by: {{ i.issue.name }}</p>
+                            <hr style="border: 3px solid black; border-radius: 5px;" />
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </tbody>
+    </table>
+</div>

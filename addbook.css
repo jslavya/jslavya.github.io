@@ -1,0 +1,78 @@
+
+/* Container Styles */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Header */
+h1.display-4 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Alert Box */
+.alert {
+    font-size: 1rem;
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Close Button */
+.alert .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #856404;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Input Groups */
+.input-group-text {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.input-group .form-control {
+    border: 1px solid #ced4da;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+}
+
+/* Textarea */
+textarea.form-control {
+    resize: vertical;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Submit Button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

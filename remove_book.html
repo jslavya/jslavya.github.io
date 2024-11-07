@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="removebook.css">
+<form class='text-center mt-5 container' style="width: 60%;" action='/remove/book' method='POST'>
+    
+     <div class='alert alert-warning'>
+         <button type='button' class='close' data-dismiss='alert'>&times;</button>
+        
+     </div>
+     
+     <h1 class='display-4 text-center'>Remove Book</h1><br>
+     <div class="input-group mb-3">
+          <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-book"></i></span>
+          </div>
+          <select name="book" class="form-control" required autofocus placeholder='Select'>
+              
+              <option value='{{ book.id }}' name='book'>{{ book.name }} by {{ book.author }}</option>
+              
+          </select>
+      </div>
+     <button class='btn btn-lg btn-primary btn-block' type='submit'>Submit</button>
+ </form>

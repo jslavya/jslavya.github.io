@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="admin.css">
+<form class='text-center mt-5 container' style="width: 40%;" action='/admin' method='POST'>
+    <div class='alert alert-warning'>
+        <button type='button' class='close' data-dismiss='alert'>&times;</button>
+    </div>
+
+    <h1 class='display-4 text-center'>Admin</h1><br>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-user"></i></span>
+        </div>
+        <input type="text" class="form-control" placeholder="Email" name="email" required autofocus>
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-lock"></i></span>
+        </div>
+        <input type="password" class="form-control" placeholder="Password" name="password" minlength="8" id="pwd">
+        <div class='input-group-append'>
+            <div class='input-group-text'>
+                <div class='custom-control custom-switch'>
+                    <input type='checkbox' class='custom-control-input' id='showpwd'>
+                    <label class='custom-control-label' for='showpwd'></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="button">
+    <a href="C:\Users\jslav\OneDrive\Desktop\css\Library-Management-System-master\Library-Management-System-master\Library_Management_System\templates\admin_layout.html" style="color: white; text-decoration: none;">Sign in</a>
+</button>
+
+</form>
+
+<script>
+    // JavaScript to toggle password visibility
+    document.getElementById('showpwd').addEventListener('change', function() {
+        const passwordField = document.getElementById('pwd');
+        if (this.checked) {
+            passwordField.type = 'text';
+        } else {
+            passwordField.type = 'password';
+        }
+    });
+</script>
